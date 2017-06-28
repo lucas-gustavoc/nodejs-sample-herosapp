@@ -1,0 +1,95 @@
+body {
+    font-size: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #D0D0D0;
+}
+
+main {
+    width: 810px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 10px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn-default {
+    padding: 10px;
+    background-color: #00cc66;
+    color: #FFF;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px
+}
+
+.btn-default:hover {
+    background-color: #00b359;
+}
+
+.linha {
+    height: 1px;
+    background-color: #000;
+}
+
+.register {
+    overflow: auto;
+}
+
+.register .field {
+    margin: 5px;
+    padding: 5px;
+    width: 180px;
+    float: left;
+}
+
+.register .field span {
+    display: block;
+}
+
+.register .controls {
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cards {
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.cards .card {
+    margin: 10px;
+    padding: 10px;
+    width: 230px;
+    float: left;
+    text-align: center;
+}
+
+.cards .card p:first-child {
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+    font-size: 1.2em;
+}
+
+.cards .card p:not(:first-child) {
+    margin-bottom: 5px;
+}
+
+.cards .card p:not(:first-child) .fieldname {
+    font-weight: bold;
+}
+
+.cards div.card:nth-child(odd) {
+    background-color: deepskyblue;
+    color: #444;
+}
+
+.cards div.card:nth-child(even) {
+    background-color: skyblue;
+    
+}
