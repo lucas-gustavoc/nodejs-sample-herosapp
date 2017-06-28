@@ -33,8 +33,24 @@ var main = function (heros) {
     
 };
 
+var eventHandlers = function () {
+    $("button#send").on("click", function(e) {
+        var name = $("#inputName").val(),
+            description = $("#inputShortDescription").val(),
+            mainpower = $("#inputMainPower").val(),
+            group = $("#inputGroup").val(),
+            hero = { "name": name, "description": description, "mainpower": mainpower, "group": group };
+        
+        $.post("addhero", hero, function (response) {
+            console.log("We posted and the server responded!");
+            console.log(response);
+        });
+    })
+};
+
 $(document).ready(function () {
     $.getJSON("heros.json", function (data) {
         main(data);
     });
+    eventHandlers();
 });

@@ -1,6 +1,14 @@
 var express = require('express');
 var app = express();
 var fs = require('fs');
+var bodyParser = require('body-parser');
+
+// parse application/x-www-form-urlencoded 
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// tell Express to parse incoming
+// JSON objects
+app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/client'));
 
@@ -22,6 +30,12 @@ app.get('/heros.json', function (req, res) {
         res.set('Content-Type', 'text/javascript');
         res.send(data);
     });
+});
+
+app.post('/addhero', function (req, res) {
+    var nhero = req.body;
+    console.log(nhero.name);
+    res.send("vai");
 });
 
 app.listen(80, function () {
