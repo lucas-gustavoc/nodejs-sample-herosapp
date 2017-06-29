@@ -34,13 +34,11 @@ app.get('/heros.json', function (req, res) {
 });
 
 app.post('/addhero', function (req, res) {
-    heroManager.addhero(req.body);
-    res.send("Hero Added");
+    res.send(heroManager.addhero(req.body));
 });
 
 app.post('/removehero', function (req, res) {
-    heroManager.removehero(req.body.heroid);
-    res.send("Hero Removed");
+    res.send(heroManager.removehero(req.body.heroid));
 });
 
 app.listen(80, function () {

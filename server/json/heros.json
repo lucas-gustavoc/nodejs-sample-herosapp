@@ -1,8 +1,32 @@
 [
   {
-    "name": "Spider Man",
-    "description": "A geek who was bit by a radioactive spider",
-    "mainpower": "Spider Powers",
-    "group": "Avengers (new)"
+    "name": "Mulher Maravilha",
+    "description": "Princesa das Amazonas",
+    "mainpower": "Força e Habilidades de Luta",
+    "group": "Liga da Justiça"
+  },
+  {
+    "name": "Super Homem",
+    "description": "Um cidadão perdido de Krypton.",
+    "mainpower": "Super Força",
+    "group": "Liga da Justiça"
+  },
+  {
+    "name": "Gaia",
+    "description": "Titan da natureza",
+    "mainpower": "Controle da Natureza",
+    "group": "Titans"
+  },
+  {
+    "name": "Chronus",
+    "description": "Titan do tempo",
+    "mainpower": "Controle do tempo cronos",
+    "group": "Titans"
+  },
+  {
+    "name": "Atlas",
+    "description": "Titan que foi condenado a segurar o mundo.",
+    "mainpower": "Não sei se tem",
+    "group": "Titans"
   }
 ]
