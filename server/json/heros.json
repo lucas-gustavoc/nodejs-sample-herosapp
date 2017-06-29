@@ -1,32 +1,8 @@
 [
-    {
-        "name": "Captain America",
-        "description": "A hero raised on the second world war.",
-        "mainpower": "Strength and smartness",
-        "group": "Avengers"
-    },
-    {
-        "name": "Super Man",
-        "description": "A lost citizen from Krypton.",
-        "mainpower": "Super strength",
-        "group": "Justice League"
-    },
-    {
-        "name": "Spider Man",
-        "description": "A geek boy who was bite by a radioactive spider.",
-        "mainpower": "Spider powers",
-        "group": "Avengers"
-    },
-    {
-        "name": "Wonder Woman",
-        "description": "The Amazons' princess.",
-        "mainpower": "Strength and super fight skills",
-        "group": "Justice League"
-    },
-    {
-        "name": "Iron Man",
-        "description": "A super rich man with a special armor.",
-        "mainpower": "Technology powers and smartness",
-        "group": "Avengers"
-    }
+  {
+    "name": "Spider Man",
+    "description": "A geek who was bit by a radioactive spider",
+    "mainpower": "Spider Powers",
+    "group": "Avengers (new)"
+  }
 ]

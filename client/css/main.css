@@ -66,6 +66,7 @@ p {
     width: 230px;
     float: left;
     text-align: center;
+    position: relative;
 }
 
 .cards .card p:first-child {
@@ -92,4 +93,17 @@ p {
 .cards div.card:nth-child(even) {
     background-color: skyblue;
     
+}
+
+.cards .card .close-button {
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    left: calc(100% - 15px); /* Amazing S2 */
+    cursor: pointer;
+    color: #555;
+}
+
+.cards .card .close-button:hover {
+    color: #111;
 }

@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var fs = require('fs');
 var bodyParser = require('body-parser');
+var heroManager = require('./server/js/heromanager.js');
 
 // parse application/x-www-form-urlencoded 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -33,9 +34,13 @@ app.get('/heros.json', function (req, res) {
 });
 
 app.post('/addhero', function (req, res) {
-    var nhero = req.body;
-    console.log(nhero.name);
-    res.send("vai");
+    heroManager.addhero(req.body);
+    res.send("Hero Added");
+});
+
+app.post('/removehero', function (req, res) {
+    heroManager.removehero(req.body.heroid);
+    res.send("Hero Removed");
 });
 
 app.listen(80, function () {
